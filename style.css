@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0f14;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: #6b7589;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Traffic Light Housing*/
+#traffic-light {
+    background: #111418;
+    border: 2px solid #222830;
+    border-radius: 18px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 100px;
+}
+
+/*Traffic Light Bulbs*/
+.bulb {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #0a0c10;
+    opacity: 0.15;
+    transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+#red   { background: #e24b4a; }
+#amber { background: #ef9f27; }
+#green { background: #1D9E75; }
