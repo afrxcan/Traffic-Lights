@@ -47,3 +47,12 @@ h1 {
 #red   { background: #e24b4a; }
 #amber { background: #ef9f27; }
 #green { background: #1D9E75; }
+
+/*Active Bulb Styles*/
+.bulb.active {
+    opacity: 1;
+}
+
+#red.active   { box-shadow: 0 0 30px 10px rgba(226, 75,  74,  0.5); }
+#amber.active { box-shadow: 0 0 30px 10px rgba(239, 159, 39,  0.5); }
+#green.active { box-shadow: 0 0 30px 10px rgba(29,  158, 117, 0.5); }
