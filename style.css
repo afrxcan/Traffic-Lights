@@ -11,6 +11,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 h1 {
@@ -56,3 +57,32 @@ h1 {
 #red.active   { box-shadow: 0 0 30px 10px rgba(226, 75,  74,  0.5); }
 #amber.active { box-shadow: 0 0 30px 10px rgba(239, 159, 39,  0.5); }
 #green.active { box-shadow: 0 0 30px 10px rgba(29,  158, 117, 0.5); }
+
+/*Control Buttons*/
+button {
+  padding: 10px 28px;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  background: #1c2130;
+  color: #e8eaf0;
+  border: 1px solid #2a3040;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+button:hover {
+  background: #222a3a;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button.active-btn {
+  background: #1a2540;
+  border-color: #3a5090;
+  color: #85B7EB;
+}

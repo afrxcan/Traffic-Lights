@@ -22,6 +22,24 @@ function nextLight() {
 
 //Auto mode variables
 const durations = [4000, 1500, 4000]; // Red, Amber, Green durations in milliseconds
+let autoMode = false;
 let timer = null;
 
 //Toggles auto mode on and off
+function autoStep() {
+  nextLight(); // Change to the next light immediately when auto mode is toggled on
+  timer = setTimeout(autoStep, durations[current]);
+}
+
+function toggleAuto() {
+  autoMode = !autoMode;
+  const btn = document.getElementById('auto-button');
+
+  if (autoMode) {
+    btn.classList.add('active-btn');
+    timer = setTimeout(autoStep, durations[current]);
+  } else {
+    btn.classList.remove('active-btn');
+    clearTimeout(timer);
+  }
+}
