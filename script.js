@@ -19,3 +19,9 @@ function nextLight() {
   current = (current + 1) % bulbs.length;
   setLight(current);
 }
+
+//Auto mode variables
+const durations = [4000, 1500, 4000]; // Red, Amber, Green durations in milliseconds
+let timer = null;
+
+//Toggles auto mode on and off
